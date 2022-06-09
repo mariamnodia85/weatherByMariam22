@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  }
+  
+ 
+  button {
+    color: 150e90;
+    cursor: pointer;
+    display: block;
+    margin-left: 15px;
+  }
+  
+  button:hover {
+      color: #150e90;
+  }
+  
+  .card-body {
+    color: #7b1fa2;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: #150e90;
+    font-weight: lighter;
+  }
+  
+  .formLocation {
+    box-sizing: border-box;
+    width: 500px;
+    padding: 8px;
+    border-color: #150e90;
+  }
+  
+  header {
+    color: #150e90;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 4pc;
+    text-align: left;
+  
+ 
+  }
+  
+  h1 {
+    color: #150e90;
+    padding: 20px 0px 20px 0px;
+    margin-left: 0;
+    position: centre;
+  }
+  
+  img {
+    width: 350px;
+    margin-left: 180px;
+    display: block;
+    margin-left: 0;
+    padding: 15px 0;
+    
+
+  }
+  
+  .plus {
+    color: red;
+  }
+  
+  .minus {
+    color: blue;
+  }
+  

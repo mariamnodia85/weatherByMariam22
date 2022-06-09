@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b94146e661.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet"></head>
+     </head>
+<title>weatherApp</title>
+    
+<body>
+	<div id="app"></div>
+<div class="intro">
+		<div class="container">
+			 <div> <header>
+						Weather App by Mariam
+		</header>
+
+<img src="images/image (2).png" class="img-fluid max-width:100%">
+	<form>
+	<input type="text" placeholder="enter your location" autocomplete="off" autofocus="on" id="search-input">
+	<input type="submit" value="search">
+</form>
+</div>
+<br>
+<div>
+	<button class="button" id="currentLocationButton"> Your current location
+	</button>
+</div>
+							 
+<h1 id="time">Current time at your location</h1>
+<h1 id="message">Current temperature in</h1>
+<h2> your location
+	 </h2>
+
+<h3 id="showingTemperature">
+	<span class="temperature" id="temperatureId"></span> 
+
+	<span class="celsius" id= "celsiusId">C°</span> /
+	<span class="farhetneight" id="farhetId">F</span>
+</h3>
+<div id="humidityAndWind">
+<span id="humidityTitle">humidity:</span> <span id="humidity">?</span> %
+<br>
+<span id="windTitle">wind:</span> <span id="wind">?</span> km/h
+</div>
+<span id="descriptionTitle">description:</span> <span id="description">?</span>
+
+<br>
+<br>
+
+<div class="row">
+<div class="col-sm-6">
+	<div class="card">
+		<div class="card-body">
+			<h5 class="card-title">Monday 8.03</h5>
+			<p class="card-text">
+					<span class="plus">1℃</span>
+				 /
+				 <span class="plus">0℃</span>
+				 </p>
+		</div>
+	</div>
+</div>
+
+<div class="col-sm-6">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Tuesday 9.03</h5>
+    <p class="card-text">
+        <span class="plus">8℃</span>
+        /
+        <span class="plus">0℃</span>
+    
+  </div>
+</div>
+</div>
+</div>
+<br>
+
+<div class="row">
+<div class="col-sm-6">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Wednesday 9.03</h5>
+            <p class="card-text">
+                <span class="plus" >2℃</span>
+                /
+                <span class="minus"> -2℃</span>
+               </p>
+           
+        </div>
+    </div>
+</div>
+<div class="col-sm-6">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Thursday 10.03</h5>
+            <p class="card-text">
+                <span class="plus">4℃</span>
+                /
+                <span class="plus">1℃</span>
+               </p>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<br>
+
+<div class="row">
+<div class="col-sm-6">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Friday 11.03</h5>
+            <p class="card-text">
+                <span class="plus">7℃</span>
+               /
+               <span class="plus">1℃</span>
+               </p>
+           
+        </div>
+    </div>
+</div>
+<div class="col-sm-6">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Saturday 12.03</h5>
+            <p class="card-text">
+                <span class="plus">6℃</span>
+                /
+                <span class="plus"> 0℃</span>
+   </p>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+	<footer>
+			Coded by Mariam Nodia
+	</footer>
+	<script src="src/app.js">
+	</script>
+</body>
+
+</html>

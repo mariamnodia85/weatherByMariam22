@@ -37,6 +37,7 @@ let days = [
   "Friday",
   "Saturday"
 ];
+
 let day = days[now.getDay()];
 h1.innerHTML = `${day}, ${date} ${month} ${year}, 
  <br>
@@ -50,6 +51,7 @@ function showCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#currentLocationButton");
 currentLocationButton.addEventListener("click", showCurrentLocation);
+
 
 function showWeather(response) {
   console.log(response.data);

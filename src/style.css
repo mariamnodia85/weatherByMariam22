@@ -1,8 +1,56 @@
 body {
     background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   }
+
+  header {
+    color: #150e90;
+    font-weight: 100;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: bold;
+    font-size: 3pc;
+    text-align: left;
+  }
+
+  h1 {
+    color: #150e90;
+    font-size: 6px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 15px 0px 15px 0px;
+    margin-left: 0;
+    position: centre;
+  }
   
- 
+  h2 {
+    color: #150e90;
+    font-size: 4px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 4px 0px 8px 0px;
+    margin-left: 0;
+    position: centre;
+  }
+  
+  h3 {
+    color: #150e90;
+    font-size: 3px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 4px 0px 8px 0px;
+    font-weight: normal;
+    margin-left: 0;
+    position: centre;
+  }
+
+
+  .humidityAndWind 
+  { color: #150e90;
+    font-size: 2px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 4px 0px 8px 0px;
+    font-weight: normal;
+    margin-left: 0;
+    position: centre;
+    
+  }
+  
   button {
     color: 150e90;
     cursor: pointer;
@@ -36,26 +84,12 @@ body {
     border-color: #150e90;
   }
   
-  header {
-    color: #150e90;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 2pc;
-    text-align: left;
   
- 
-  }
   
-  h1 {
-    color: #150e90;
-    padding: 20px 0px 20px 0px;
-    margin-left: 0;
-    position: centre;
-    font-size: 1pc;
-  }
+  
   
   img {
-    width: 190px;
+    width: 100px;
     margin-left: 180px;
     display: block;
     margin-left: 0;

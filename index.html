@@ -17,7 +17,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet"></head>
-     </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+</head>
 <title>weatherApp</title>
     
 <body>
@@ -25,42 +28,37 @@
 <div class="intro">
 		<div class="container">
 			 <div> <header>
-						Weather app by Mariam
-		</header>
-
-<img src="images/image (2).png" class="img-fluid max-width:100%">
-	<form>
-	<input type="text" placeholder="enter your location" autocomplete="off" autofocus="on" id="search-input">
-	<input type="submit" value="search">
-</form>
-</div>
-<br>
-<div>
-	<button class="button" id="currentLocationButton"> Your current location
-	</button>
-</div>
-							 
-<h1 id="time">Current time at your location now</h1>
-<h1 id="message">Current temperature in</h1>
-<h2> your location
-	 </h2>
+						Weather app by Mariam</header>
+        <h1 id="message">Current temperature in</h1>
+<h2> your location</h2>
+        <form>
+            <input type="text" placeholder="enter your location" autocomplete="off" autofocus="on" id="search-input">
+            <input type="submit" value="search">
+        </form>
+        <div>
+            <button class="button" id="currentLocationButton"> Your current location
+            </button>
+        </div>
+                        
+        
 
 <h3 id="showingTemperature">
+    <br>
 	<span class="temperature" id="temperatureId"></span> 
 
 	<span class="celsius" id= "celsiusId">C°</span> /
 	<span class="farhetneight" id="farhetId">F</span>
 </h3>
+ 
+<img src="images/image (2).png" alt="">
 <div id="humidityAndWind">
 <span id="humidityTitle">humidity:</span> <span id="humidity">?</span> %
 <br>
 <span id="windTitle">wind:</span> <span id="wind">?</span> km/h
 </div>
 <span id="descriptionTitle">description:</span> <span id="description">?</span>
-
 <br>
 <br>
-
 <div class="row">
 <div class="col-sm-6">
 	<div class="card">
@@ -152,8 +150,9 @@
 
 </div>
 	<footer>
-			Coded by Mariam Nodia
-         
+			<p>Coded by Mariam Nodia</p>
+        <p>open source: 
+            https://github.com/mariamnodia85/weatherByMariam22</p>
 	</footer>
 	<script src="src/app.js">
 	</script>

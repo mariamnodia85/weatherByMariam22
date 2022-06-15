@@ -56,6 +56,8 @@ currentLocationButton.addEventListener("click", showCurrentLocation);
 function showWeather(response) {
   console.log(response.data);
   let description=document.querySelector("#description");
+  let iconElement=document.querySelector ("#icon");
+iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
   document.querySelector("h2").innerHTML = response.data.name;
   document.querySelector("#temperatureId").innerHTML = Math.round(
@@ -65,6 +67,7 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+ 
   document.querySelector("#description").innerHTML  = response.data.weather[0].description;
   
 

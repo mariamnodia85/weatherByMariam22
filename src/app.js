@@ -57,6 +57,7 @@ function showWeather(response) {
   console.log(response.data);
   let description=document.querySelector("#description");
   let iconElement=document.querySelector ("#icon");
+  celsiusTemperature = response.data.main.temp;
 iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
   document.querySelector("h2").innerHTML = response.data.name;
@@ -91,13 +92,22 @@ function searchForLocation(position) {
 
 function displayFarhenheitTemperature(event) {
 event.preventDefault();
-let farhenheitTemperature = (14 * 9) / 5 + 32;
+let farhenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
 let temperatureElemenet=document.querySelector("#temperatureId");
 temperatureElemenet.innerHTML = Math.round(farhenheitTemperature);
 }
 
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElemenet=document.querySelector("#temperatureId");
+  temperatureElemenet.innerHTML = Math.round(celsiusTemperature);
+  }
+let celsiusTemperature = null;
 let form = document.querySelector("form");
 form.addEventListener("submit", search);
 
 let farhetLink = document.querySelector("#farhet-link");
 farhetLink.addEventListener("click", displayFarhenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);

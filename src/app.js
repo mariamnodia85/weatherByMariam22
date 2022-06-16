@@ -89,5 +89,15 @@ function searchForLocation(position) {
   axios.get(apiUrl).then(showWeather);
 }
 
+function displayFarhenheitTemperature(event) {
+event.preventDefault();
+let farhenheitTemperature = (14 * 9) / 5 + 32;
+let temperatureElemenet=document.querySelector("#temperatureId");
+temperatureElemenet.innerHTML = Math.round(farhenheitTemperature);
+}
+
 let form = document.querySelector("form");
 form.addEventListener("submit", search);
+
+let farhetLink = document.querySelector("#farhet-link");
+farhetLink.addEventListener("click", displayFarhenheitTemperature);
